@@ -19,8 +19,8 @@ See [`index.html`](docs/index.html) in docs.
 
 ## References
 
-MDN contributors. 2020. “Using IndexedDB - Web APIs.” 
-*Mozilla Developer Network*. April 26. 
+MDN contributors. 2020. “Using IndexedDB - Web APIs.” 
+*Mozilla Developer Network*. April 26. 
 [https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB]
 
 [2]: https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
