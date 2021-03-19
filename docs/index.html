@@ -54,13 +54,13 @@ IndexedDB example tested as follows:
 -->
 <main role="main" class="container mt-3 flex-shrink-0">
   <!--
-  <h1><small class="text-muted">IndexedDB example</small></h1> -->
-  <p class="lead text-muted">IndexedDB example</p>
+  <h1><small class="text-secondary">IndexedDB example</small></h1> -->
+  <p class="lead text-secondary">IndexedDB example</p>
   <div id="alert" class="card mb-3" style="display: none; border-color: #f5c6cb;">
-    <div class="card-header text-muted" style="background-color: #f8d7da; border-bottom-color: #f5c6cb;">
+    <div class="card-header text-secondary" style="background-color: #f8d7da; border-bottom-color: #f5c6cb;">
       alert
       </div>
-    <div class="card-body text-muted" id="alertOutput" style="font-size: 13px;">
+    <div class="card-body text-secondary" id="alertOutput" style="font-size: 13px;">
     </div>
     <div class="card-footer" style="border-top-color: #f5c6cb;">
       <div class="form-row">
@@ -80,7 +80,7 @@ IndexedDB example tested as follows:
     <!-- /div class="card-footer" -->
   </div>
   <!-- id="alert" -->
-  <nav class="border mb-2" style="padding: 0.10rem !important; background-color: rgba(0, 0, 0, 0.03);">
+  <nav class="border mb-2" style="padding: 0.3rem !important; background-color: rgba(0, 0, 0, 0.03);">
     <div id="nav" role="tablist" class="nav btn-group btn-block">
       <button id="navCreate" href="#contentCreate" aria-controls="contentCreate" aria-selected="true" data-toggle="tab" role="tab" type="button" class="btn btn-info btn-sm mr-1 active">
         create
@@ -107,19 +107,19 @@ IndexedDB example tested as follows:
     <div id="contentCreate" aria-labelledby="navCreate" class="tab-pane fade active show" role="tabpanel">
       <div aria-label="cardGroupCreate" class="card-group">
         <div aria-label="cardInputCreate" class="card mb-1">
-          <form id="formCreate" accept-charset="utf-8" method="get" action="#">
-            <div class="card-header text-muted">create record</div>
+          <form id="formCreate" action="#" method="get" accept-charset="utf-8">
+            <div class="card-header text-secondary">create record</div>
             <div class="card-body">
               <div class="form-row mb-2">
                 <div class="col">
                   <input id="ssnCreate" aria-describedby="ssnCreateHelp" value="666-66-6666" type="text" class="form-control form-control-sm">
-                  <small id="ssnCreateHelp" class="text-muted">
+                  <small id="ssnCreateHelp" class="text-secondary">
                     ssn
                   </small>
                 </div>
                 <div class="col">
                   <input id="nameCreate" aria-describedby="nameCreateHelp" value="Adam" type="text" class="form-control form-control-sm">
-                  <small id="nameCreateHelp" class="text-muted">
+                  <small id="nameCreateHelp" class="text-secondary">
                     name
                   </small>
                 </div>
@@ -128,13 +128,13 @@ IndexedDB example tested as follows:
               <div class="form-row">
                 <div class="col">
                   <input id="ageCreate" aria-describedby="ageCreateHelp" value="50" type="number" class="form-control form-control-sm">
-                  <small id="ageCreateHelp" class="text-muted">
+                  <small id="ageCreateHelp" class="text-secondary">
                     age
                   </small>
                 </div>
                 <div class="col">
                   <input id="emailCreate" aria-describedby="emailCreateHelp" value="adam@world.org" type="text" class="form-control form-control-sm">
-                  <small id="emailCreateHelp" class="text-muted">
+                  <small id="emailCreateHelp" class="text-secondary">
                     email
                   </small>
                 </div>
@@ -145,12 +145,12 @@ IndexedDB example tested as follows:
             <div class="card-footer">
               <div class="form-row">
                 <div class="col">
-                  <button onclick="create()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="create()" type="button" class="btn btn-info btn-sm">
                     create record
                   </button>
                 </div>
                 <div class="col">
-                  <button onclick="formCreate.reset()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="formCreate.reset()" type="button" class="btn btn-info btn-sm">
                     reset create
                   </button>
                 </div>
@@ -163,13 +163,13 @@ IndexedDB example tested as follows:
         </div>
         <!-- aria-label="cardInputCreate" -->
         <div id="cardOutputCreate" class="card mb-1">
-          <div class="card-header text-muted">create output</div>
+          <div class="card-header text-secondary">create output</div>
           <div id="outputCreate" class="card-body">
           </div>
           <div class="card-footer">
             <div class="form-row">
               <div class="col-6">
-                <button onclick="clearNodes2('outputCreate', 0)" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                <button onclick="clearNodes2('outputCreate', 0)" type="button" class="btn btn-info btn-sm">
                   clear create output
                 </button>
               </div>
@@ -187,12 +187,12 @@ IndexedDB example tested as follows:
       <div aria-label="cardGroupRetrieve" class="card-group">
         <div aria-label="cardInputRetrieve" class="card mb-1">
           <form id="formRetrieve" accept-charset="utf-8" method="get" action="#">
-            <div class="card-header text-muted">retrieve record</div>
+            <div class="card-header text-secondary">retrieve record</div>
             <div class="card-body">
               <div class="form-row">
                 <div class="col">
                   <input id="ssnRetrieve" aria-describedby="ssnRetrieveHelp" value="666-66-6666" type="text" class="form-control form-control-sm">
-                  <small class="text-muted" id="ssnRetrieveHelp">
+                  <small class="text-secondary" id="ssnRetrieveHelp">
                     ssn
                   </small>
                 </div>
@@ -203,12 +203,12 @@ IndexedDB example tested as follows:
             <div class="card-footer">
               <div class="form-row">
                 <div class="col">
-                  <button onclick="retrieve()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="retrieve()" type="button" class="btn btn-info btn-sm">
                     retrieve record
                   </button>
                 </div>
                 <div class="col">
-                  <button onclick="formRetrieve.reset()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="formRetrieve.reset()" type="button" class="btn btn-info btn-sm">
                     reset retrieve
                   </button>
                 </div>
@@ -221,13 +221,13 @@ IndexedDB example tested as follows:
         </div>
         <!-- aria-label="cardInputRetrieve" -->
         <div id="cardOutputRetrieve" class="card mb-1">
-          <div class="card-header text-muted">retrieve output</div>
+          <div class="card-header text-secondary">retrieve output</div>
           <div id="outputRetrieve" class="card-body">
           </div>
           <div class="card-footer">
             <div class="form-row">
               <div class="col-6">
-                <button onclick="clearNodes2('outputRetrieve', 0)" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                <button onclick="clearNodes2('outputRetrieve', 0)" type="button" class="btn btn-info btn-sm">
                   clear retrieve output
                 </button>
               </div>
@@ -245,18 +245,18 @@ IndexedDB example tested as follows:
       <div aria-label="cardGroupUpdate" class="card-group">
         <div aria-label="cardInputUpdate" class="card mb-1">
           <form id="formUpdate" accept-charset="utf-8" method="get" action="#">
-            <div class="card-header text-muted">update record</div>
+            <div class="card-header text-secondary">update record</div>
             <div class="card-body">
               <div class="form-row mb-2">
                 <div class="col">
                   <input id="ssnUpdate" aria-describedby="ssnUpdateHelp" value="555-55-5555" type="text" class="form-control form-control-sm">
-                  <small id="ssnUpdateHelp" class="text-muted">
+                  <small id="ssnUpdateHelp" class="text-secondary">
                     ssn
                   </small>
                 </div>
                 <div class="col">
                   <input id="nameUpdate" aria-describedby="nameUpdateHelp" value="Donna" type="text" class="form-control form-control-sm">
-                  <small id="nameUpdateHelp" class="text-muted">
+                  <small id="nameUpdateHelp" class="text-secondary">
                     name
                   </small>
                 </div>
@@ -265,13 +265,13 @@ IndexedDB example tested as follows:
               <div class="form-row">
                 <div class="col">
                   <input id="ageUpdate" aria-describedby="ageUpdateHelp" value="32" type="number" class="form-control form-control-sm">
-                  <small id="ageUpdateHelp" class="text-muted">
+                  <small id="ageUpdateHelp" class="text-secondary">
                     age
                   </small>
                 </div>
                 <div class="col">
                   <input id="emailUpdate" aria-describedby="emailUpdateHelp" value="donna@home.org" type="text" class="form-control form-control-sm">
-                  <small id="emailUpdateHelp" class="text-muted">
+                  <small id="emailUpdateHelp" class="text-secondary">
                     email
                   </small>
                 </div>
@@ -282,12 +282,12 @@ IndexedDB example tested as follows:
             <div class="card-footer">
               <div class="form-row">
                 <div class="col">
-                  <button onclick="update()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="update()" type="button" class="btn btn-info btn-sm">
                     update record
                   </button>
                 </div>
                 <div class="col">
-                  <button onclick="formUpdate.reset()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="formUpdate.reset()" type="button" class="btn btn-info btn-sm">
                     reset update
                   </button>
                 </div>
@@ -300,13 +300,13 @@ IndexedDB example tested as follows:
         </div>
         <!-- aria-label="cardInputUpdate" -->
         <div id="cardOutputUpdate" class="card mb-1">
-          <div class="card-header text-muted">update output</div>
+          <div class="card-header text-secondary">update output</div>
           <div id="outputUpdate" class="card-body">
           </div>
           <div class="card-footer">
             <div class="form-row">
               <div class="col-6">
-                <button onclick="clearNodes2('outputUpdate', 0)" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                <button onclick="clearNodes2('outputUpdate', 0)" type="button" class="btn btn-info btn-sm">
                   clear update output
                 </button>
               </div>
@@ -324,18 +324,18 @@ IndexedDB example tested as follows:
       <div aria-label="cardGroupDelete" class="card-group">
         <div aria-label="cardInputDelete" class="card mb-1">
           <form id="formDelete" accept-charset="utf-8" method="get" action="#">
-            <div class="card-header text-muted">delete record</div>
+            <div class="card-header text-secondary">delete record</div>
             <div class="card-body">
               <div class="form-row mb-2">
                 <div class="col">
                   <input id="ssnDelete" aria-describedby="ssnDeleteHelp" value="666-66-6666" type="text" class="form-control form-control-sm">
-                  <small id="ssnDeleteHelp" class="text-muted">
+                  <small id="ssnDeleteHelp" class="text-secondary">
                     ssn
                   </small>
                 </div>
                 <div class="col">
                   <input id="nameDelete" aria-describedby="nameDeleteHelp" value="Adam" type="text" class="form-control form-control-sm">
-                  <small id="nameDeleteHelp" class="text-muted">
+                  <small id="nameDeleteHelp" class="text-secondary">
                     name
                   </small>
                 </div>
@@ -344,13 +344,13 @@ IndexedDB example tested as follows:
               <div class="form-row">
                 <div class="col">
                   <input id="ageDelete" aria-describedby="ageDeleteHelp" value="50" type="number" class="form-control form-control-sm">
-                  <small id="ageDeleteHelp" class="text-muted">
+                  <small id="ageDeleteHelp" class="text-secondary">
                     age
                   </small>
                 </div>
                 <div class="col">
                   <input id="emailDelete" aria-describedby="emailDeleteHelp" value="adam@world.org" type="text" class="form-control form-control-sm">
-                  <small id="emailDeleteHelp" class="text-muted">
+                  <small id="emailDeleteHelp" class="text-secondary">
                     email
                   </small>
                 </div>
@@ -361,12 +361,12 @@ IndexedDB example tested as follows:
             <div class="card-footer">
               <div class="form-row">
                 <div class="col">
-                  <button onclick="deleteRecord()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="deleteRecord()" type="button" class="btn btn-info btn-sm">
                     delete record
                   </button>
                 </div>
                 <div class="col">
-                  <button onclick="formDelete.reset()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="formDelete.reset()" type="button" class="btn btn-info btn-sm">
                     reset delete
                   </button>
                 </div>
@@ -379,13 +379,13 @@ IndexedDB example tested as follows:
         </div>
         <!-- aria-label="cardInputDelete" -->
         <div id="cardOutputDelete" class="card mb-1">
-          <div class="card-header text-muted">delete output</div>
+          <div class="card-header text-secondary">delete output</div>
           <div id="outputDelete" class="card-body">
           </div>
           <div class="card-footer">
             <div class="form-row">
               <div class="col-6">
-                <button onclick="clearNodes2('outputDelete', 0)" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                <button onclick="clearNodes2('outputDelete', 0)" type="button" class="btn btn-info btn-sm">
                   clear delete output
                 </button>
               </div>
@@ -403,18 +403,18 @@ IndexedDB example tested as follows:
       <div aria-label="cardGroupSearch" class="card-group">
         <div aria-label="cardInputSearch" class="card mb-1">
           <form id="formSearch" accept-charset="utf-8" method="get" action="#">
-            <div class="card-header text-muted">search records</div>
+            <div class="card-header text-secondary">search records</div>
             <div class="card-body">
               <div class="form-row mb-2">
                 <div class="col">
                   <input id="ssnSearch" aria-describedby="ssnSearchHelp" placeholder="ssn" type="text" class="form-control form-control-sm">
-                  <small id="ssnSearchHelp" class="text-muted">
+                  <small id="ssnSearchHelp" class="text-secondary">
                     all or part (e.g., 555)
                   </small>
                 </div>
                 <div class="col">
                   <input id="nameSearch" aria-describedby="nameSearchHelp" placeholder="name" type="text" class="form-control form-control-sm">
-                  <small id="nameSearchHelp" class="text-muted">
+                  <small id="nameSearchHelp" class="text-secondary">
                     all or part
                   </small>
                 </div>
@@ -423,13 +423,13 @@ IndexedDB example tested as follows:
               <div class="form-row mb-2">
                 <div class="col">
                   <input id="ageSearch" aria-describedby="ageSearchHelp" placeholder="age" type="text" class="form-control form-control-sm">
-                  <small id="ageSearchHelp" class="text-muted">
+                  <small id="ageSearchHelp" class="text-secondary">
                     less than or equal to
                   </small>
                 </div>
                 <div class="col">
                   <input id="emailSearch" aria-describedby="emailSearchHelp" placeholder="email" type="text" class="form-control form-control-sm">
-                  <small id="emailSearchHelp" class="text-muted">
+                  <small id="emailSearchHelp" class="text-secondary">
                     all or part
                   </small>
                 </div>
@@ -437,11 +437,11 @@ IndexedDB example tested as follows:
               <!-- class="form-row mb-2" -->
               <div class="form-row">
                 <div class="col">
-                    <select id="all" aria-describedby="allHelp" class="custom-select custom-select-sm text-muted">
+                    <select id="all" aria-describedby="allHelp" class="custom-select custom-select-sm text-secondary">
                       <option value="search">search</option>
                       <option value="retrieveAll">retrieve all</option>
                     </select>
-                  <small id="allHelp" class="text-muted">
+                  <small id="allHelp" class="text-secondary">
                     search or retrieve all
                   </small>
                 </div>
@@ -452,12 +452,12 @@ IndexedDB example tested as follows:
             <div class="card-footer">
               <div class="form-row">
                 <div class="col">
-                  <button onclick="search()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="search()" type="button" class="btn btn-info btn-sm">
                     search
                   </button>
                 </div>
                 <div class="col">
-                  <button onclick="formSearch.reset()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="formSearch.reset()" type="button" class="btn btn-info btn-sm">
                     reset search
                   </button>
                 </div>
@@ -470,13 +470,13 @@ IndexedDB example tested as follows:
         </div>
         <!-- aria-label="cardInputSearch" -->
         <div id="cardOutputSearch" class="card mb-1">
-          <div class="card-header text-muted">search output</div>
+          <div class="card-header text-secondary">search output</div>
           <div id="outputSearch" class="card-body">
           </div>
           <div class="card-footer">
             <div class="form-row">
               <div class="col">
-                <button onclick="clearNodes2('outputSearch', 0)" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                <button onclick="clearNodes2('outputSearch', 0)" type="button" class="btn btn-info btn-sm">
                   clear seach output
                 </button>
               </div>
@@ -496,12 +496,12 @@ IndexedDB example tested as follows:
       <div aria-label="cardGroupDownload" class="card-group">
         <div aria-label="cardDownloadUpdate" class="card mb-1">
           <form id="formDownload" accept-charset="utf-8" method="get" action="#">
-            <div class="card-header text-muted">download data</div>
+            <div class="card-header text-secondary">download data</div>
             <div class="card-body"></div>
             <div class="card-footer">
               <div class="form-row">
                 <div class="col-6">
-                  <button onclick="downloadData()" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                  <button onclick="downloadData()" type="button" class="btn btn-info btn-sm">
                     download
                   </button>
                 </div>
@@ -514,13 +514,13 @@ IndexedDB example tested as follows:
         </div>
         <!-- aria-label="cardDownloadUpdate" -->
         <div id="cardOutputDownload" class="card mb-1">
-          <div class="card-header text-muted">download output</div>
+          <div class="card-header text-secondary">download output</div>
           <div id="outputDownload" class="card-body">
           </div>
           <div class="card-footer">
             <div class="form-row">
               <div class="col-6">
-                <button onclick="clearNodes2('outputDownload', 0)" type="button" class="btn btn-info btn-sm form-control form-control-sm">
+                <button onclick="clearNodes2('outputDownload', 0)" type="button" class="btn btn-info btn-sm">
                   clear download output
                 </button>
               </div>
@@ -541,12 +541,12 @@ IndexedDB example tested as follows:
   <hr class="mb-1">
   <p class="float-right">
     <small>
-      <a class="text-muted" href="#"></a>
+      <a class="text-secondary" href="#"></a>
     </small>
   </p>
   <p>
     <small>
-      <a class="text-muted" href="https://github.com/project4dimensions/jsIndexedDB-example">
+      <a class="text-secondary" href="https://github.com/project4dimensions/jsIndexedDB-example">
         jsIndexedDB-example · GitHub
       </a>
     </small>
